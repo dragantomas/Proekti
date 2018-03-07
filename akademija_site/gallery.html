@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery rabotno</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles/global.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/media.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/font-awesome.css" />
+</head>
+<body>
+	<div class="row menu-top">
+		<div class="wrapper">
+			<a href="index.html">Академија</a>
+			<div class="menu-top-contacts">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<a href="contact.html">02/3123-456</a>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<a href="contact.html">info@akademija.com</a>
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<a href="contact.html">локација</a>
+				<select>
+					<option value="MK" selected>MK</option>
+					<option value="EN">EN</option>
+					<option value="AL">AL</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div id="navbar" class="row menu-main">
+		<div class="wrapper">
+			<a href="gallery.html"><div class="logo"><div class="logo-red"></div></div></a>
+			<div class="nav-wrap">
+				<ul class="nav">
+				    <li>
+				        <a href="#">Академии</a>
+				        <ul>
+				            <li><a href="blog.html">Веб Академија</a></li>
+				            <li><a href="blog2.html">ИТ Академија</a></li>
+				            <li><a href="gallery.html">Академија за програмирање</a></li>
+				            <li><a href="contact.html">Бизнис Академија</a></li>
+				            <li><a href="blog.html">Академија за математика</a></li>
+				            <li><a href="blog2.html">Академија за физика</a></li>
+				        </ul>
+				    </li>
+				    <li>
+				        <a href="#">Ит курсеви</a>
+				        <ul>
+				        	<li><a href="blog.html">Small product (one)</a></li>
+				            <li><a href="blog2.html">Small product (two)</a></li>
+				            <li><a href="gallery.html">Small product (three)</a></li>
+				            <li><a href="contact.html">Sevice one</a></li>
+				            <li><a href="#">Sevice two</a></li>
+				            <li><a href="#">Sevice three</a></li>
+				            <li><a href="#">Sevice four</a></li>
+				        </ul>
+				    </li>
+				    <li>
+				        <a href="#">Бизнис курсеви</a>
+				        <ul>
+				            <li><a href="blog.html">Small product (one)</a></li>
+				            <li><a href="blog2.html">Small product (two)</a></li>
+				            <li><a href="gallery.html">Small product (three)</a></li>
+				            <li><a href="contact.html">Small product (four)</a></li>
+				            <li><a href="#">Big product (five)</a></li>
+				            <li><a href="#">Big product (six)</a></li>
+				            <li><a href="#">Big product (seven)</a></li>
+				            <li><a href="#">Big product (eight)</a></li>
+				            <li><a href="#">Enormous product (nine)</a></li>
+				            <li><a href="#">Enormous product (ten)</a></li>
+				            <li><a href="#">Enormous product (eleven)</a></li>
+				        </ul>
+				    </li>
+				    <li>
+				        <a href="#">Тестирања</a>
+				        <ul>
+				            <li><a href="blog.html">Out-of-hours</a></li>
+				            <li><a href="blog2.html">Directions</a></li>
+				            <li><a href="gallery.html">Directions</a></li>
+				            <li><a href="contact.html">Directions</a></li>
+				        </ul>
+				    </li>
+				    <li>
+				        <a href="gallery.html">Галерија</a>
+				        <ul>
+				            <li><a href="blog.html">Out-of-hours</a></li>
+				            <li><a href="blog2.html">Directions</a></li>
+				            <li><a href="gallery.html">Directions</a></li>
+				            <li><a href="contact.html">Directions</a></li>
+				        </ul>
+				    </li>
+				    <li>
+				    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+				        <ul>
+				            <li>
+				            	<form action="action_page.php">
+				            	<input type="text" placeholder="Пребарај"/><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+				            	</form>
+				            </li>
+				        </ul>
+				    </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row blog-head">
+		<div class="gallery-image"><div class="blog-overlay"></div></div>
+		<div class="blog-headline">
+			<h2>Галерија</h2>
+		</div>
+	</div>
+	<div class="row gallery">
+		<div class="wrapper">
+			<div class="gallery-content">
+				<input id="gal1" type="radio" name="tabs" checked>
+				<label for="gal1">Сите</label>
+				<input id="gal2" type="radio" name="tabs">
+				<label for="gal2">Активности</label>
+				<input id="gal3" type="radio" name="tabs">
+				<label for="gal3">Настани</label>
+				<input id="gal4" type="radio" name="tabs">
+				<label for="gal4">Простории</label>
+				<div id="gallery1">
+					<section class="gallery-lightbox">
+						<ul class="lb-album">
+							<li>
+								<a href="#image-1">
+									<img src="assets/images/gallery/galimg6.jpg" alt="image01"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-1">
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<img src="assets/images/gallery/galimg6.jpg" />
+									<div class="prev-next">
+										<a href="#image-6"><i class="fa fa-angle-left" aria-hidden="true"></i></i></a>
+										<a href="#image-2"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-2">
+									<img src="assets/images/gallery/galimg2.jpg" alt="image02"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-2">
+									<img src="assets/images/gallery/galimg2.jpg" alt="image02" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-1"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-3"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-3">
+									<img src="assets/images/gallery/galimg3.jpg" alt="image03"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-3">
+									<img src="assets/images/gallery/galimg3.jpg" alt="image03" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-2"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-4"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-4">
+									<img src="assets/images/gallery/galimg4.jpg" alt="image04"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-4">
+									<img src="assets/images/gallery/galimg4.jpg" alt="image04" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-3"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-5"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-5">
+									<img src="assets/images/gallery/galimg5.jpg" alt="image05"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-5">
+									<img src="assets/images/gallery/galimg5.jpg" alt="image05" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-4"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-6"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-6">
+									<img src="assets/images/gallery/galimg1.jpg" alt="image06"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-6">
+									<img src="assets/images/gallery/galimg1.jpg" alt="image06"/>
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-5"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-1"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div id="gallery2">
+					<section class="gallery-lightbox">
+						<ul class="lb-album">
+							<li>
+								<a href="#image-7">
+									<img src="assets/images/gallery/galimg7.jpg" alt="image07"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-7">
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<img src="assets/images/gallery/galimg7.jpg" />
+									<div class="prev-next">
+										<a href="#image-12"><i class="fa fa-angle-left" aria-hidden="true"></i></i></a>
+										<a href="#image-8"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-8">
+									<img src="assets/images/gallery/galimg8.jpg" alt="image08"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-8">
+									<img src="assets/images/gallery/galimg8.jpg" alt="image08" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-7"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-9"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-9">
+									<img src="assets/images/gallery/galimg9.jpg" alt="image09"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-9">
+									<img src="assets/images/gallery/galimg9.jpg" alt="image09" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-8"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-10"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-10">
+									<img src="assets/images/gallery/galimg10.jpg" alt="image10"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-10">
+									<img src="assets/images/gallery/galimg10.jpg" alt="image10" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-9"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-11"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-11">
+									<img src="assets/images/gallery/galimg11.jpg" alt="image-11"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-11">
+									<img src="assets/images/gallery/galimg11.jpg" alt="image-11" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-10"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-12"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-12">
+									<img src="assets/images/gallery/galimg12.jpg" alt="image-12"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-12">
+									<img src="assets/images/gallery/galimg12.jpg" alt="image-2"/>
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-11"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-7"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div id="gallery3">
+					<section class="gallery-lightbox">
+						<ul class="lb-album">
+							<li>
+								<a href="#image-13">
+									<img src="assets/images/gallery/galimg13.jpg" alt="image-13"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-13">
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<img src="assets/images/gallery/galimg13.jpg" />
+									<div class="prev-next">
+										<a href="#image-18"><i class="fa fa-angle-left" aria-hidden="true"></i></i></a>
+										<a href="#image-14"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-14">
+									<img src="assets/images/gallery/galimg14.jpg" alt="image-14"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-14">
+									<img src="assets/images/gallery/galimg14.jpg" alt="image-14" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-13"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-15"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-15">
+									<img src="assets/images/gallery/galimg15.jpg" alt="image-15"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-15">
+									<img src="assets/images/gallery/galimg15.jpg" alt="image-15" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-14"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-16"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-16">
+									<img src="assets/images/gallery/galimg16.jpg" alt="image-16"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-16">
+									<img src="assets/images/gallery/galimg16.jpg" alt="image-16" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-15"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-17"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-17">
+									<img src="assets/images/gallery/galimg17.jpg" alt="image-17"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-17">
+									<img src="assets/images/gallery/galimg17.jpg" alt="image-17" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-16"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-18"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-18">
+									<img src="assets/images/gallery/galimg18.jpg" alt="image-18"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-18">
+									<img src="assets/images/gallery/galimg18.jpg" alt="image-18"/>
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-17"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-13"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div id="gallery4">
+					<section class="gallery-lightbox">
+						<ul class="lb-album">
+							<li>
+								<a href="#image-19">
+									<img src="assets/images/gallery/galimg19.jpg" alt="image-19"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-19">
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<img src="assets/images/gallery/galimg19.jpg" />
+									<div class="prev-next">
+										<a href="#image-24"><i class="fa fa-angle-left" aria-hidden="true"></i></i></a>
+										<a href="#image-20"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-20">
+									<img src="assets/images/gallery/galimg20.jpg" alt="image-20"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-20">
+									<img src="assets/images/gallery/galimg20.jpg" alt="image-20" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-19"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-21"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-21">
+									<img src="assets/images/gallery/galimg21.jpg" alt="image-21"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-21">
+									<img src="assets/images/gallery/galimg21.jpg" alt="image-21" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-20"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-22"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-22">
+									<img src="assets/images/gallery/galimg22.jpg" alt="image-22"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-22">
+									<img src="assets/images/gallery/galimg22.jpg" alt="image-22" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-21"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-23"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-23">
+									<img src="assets/images/gallery/galimg23.jpg" alt="image-23"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-23">
+									<img src="assets/images/gallery/galimg23.jpg" alt="image-23" />
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-22"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-24"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#image-24">
+									<img src="assets/images/gallery/galimg24.jpg" alt="image-24"><span><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+								</a>
+								<div class="lb-overlay" id="image-24">
+									<img src="assets/images/gallery/galimg24.jpg" alt="image-24"/>
+									<a href="#page" class="lb-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+									<div class="prev-next">							
+										<a href="#image-23"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+										<a href="#image-19"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<ul><a href="#">КОНТАКТ</ul></a>				
+					<li><i class="fa fa-phone" aria-hidden="true"></i><a href="#">02/3123-456</a></li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">info@akademija.com</a></li>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">локација</a></li>
+				<ul><a href="#">СЛЕДИ НÈ</ul></a>
+				<li class="social-btn"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</div>
+			<div class="footer-info">
+				<ul><a href="#">ЗА НАС</a></ul>
+				<li><a href="#">Клиенти на Академијата</a></li>
+				<li><a href="#">Тимот на Академијата</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Настани</a></li>
+				<li><a href="#">Галерија</a></li>
+			</div>
+			<div class="footer-info">
+				<ul><a href="#">АКАДЕМИЈА</ul>
+				<li><a href="#">Академија за Веб дизајн</a></li>
+				<li><a href="#">Академија за Графички дизајн</a></li>
+				<li><a href="#">Академија за Програмирање</a></li>
+				<li><a href="#">Компјутерски мрежи</a></li>
+				<li><a href="#">Бизнис Академија</a></li>
+			</div>
+			<div class="footer-info">
+				<ul><a href="#">КУРСЕВИ</a></ul>
+				<li><a href="#">Microsoft</a></li>
+				<li><a href="#">Cisco</a></li>
+				<li><a href="#">Adobe</a></li>
+				<li><a href="#">CompTIA</a></li>
+				<li><a href="#">Hi-tech courses</a></li>
+			</div>
+			<div class="footer-info">
+				<ul><a href="#">ТЕСТИРАЊА</a></ul>
+				<li><a href="#">Microsoft</a></li>
+				<li><a href="#">Certiport</a></li>
+				<li><a href="#">Pearson Vue</a></li>
+				<li><a href="#">Prometric</a></li>
+				<li><a href="#">ECDL</a></li>
+			</div>
+		</div>
+		<p>Академија (с) Сите права заштитени. 2018 година.</p>
+	</div>
+<script type="text/javascript" src="assets/scripts/global.js"></script>
+</body>
+</html>
+
+<!-- POSLEDNO ZA GIT > OD DOMA > 23:10 > Nedela 04-03-18 -->

@@ -1,0 +1,30 @@
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	display: block;
+}
+
+.widget {
+	width: 260px;
+	height: 480px;
+	background-color: lightcyan;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 10px;
+	border-style: 2px;
+	border-style: solid;
+	border-color: darkblue;
+
+}
+
+button {
+	margin-top: 10px;
+	width: 173px;
+	height: 30px;
+	background-color: darkblue;
+	padding: 5px;
+	border-style: none;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+}
