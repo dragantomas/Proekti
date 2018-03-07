@@ -179,11 +179,25 @@ img a i {
     background: rgba(255,255,255,0); 
     list-style: none;
     position: absolute;
-    left: -9999px;
+    /*left: -9999px;*/
 }
 
 #navbar .nav ul li {
     float: none;
+    width: 100%;
+}
+
+#navbar .nav li ul a {
+    width: 100%;
+    display: inline-block;
+}
+
+#navbar .nav li ul {
+	top: 75px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+
 }
 
 /* DROPDOWN */
@@ -196,7 +210,9 @@ img a i {
 }
 
 #navbar .nav li:hover ul {
-    left: 0;
+    top: 61px;
+    visibility: visible;
+    opacity: 1;
 	
 }
 
@@ -216,6 +232,14 @@ img a i {
     background: none;
     transition: all .3s;
 }
+#navbar .nav li:last-child {
+	display: inline-block;
+    position: relative;
+    height: 100%;
+}
+#navbar .nav .expand{
+	transform: scale(1, 1) !important;
+}
 
 #navbar .nav input[type=text] {
     width: 370px;
@@ -224,13 +248,23 @@ img a i {
     float: right;
     padding: 11px;
     border: 0;
-    margin-top: -50px;
-    margin-left: -275px;
     font-size: 14px;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: -314px;
+    bottom: -38px;
+    margin: auto;
 }
 
 #navbar .nav input[type=text]:focus {
 	outline: none;
+}
+
+#navbar .nav li form {
+    float: left;
+    height: 100%;
 }
 
 ::placeholder {
@@ -239,14 +273,27 @@ img a i {
 
 .nav button {
 	float: right;
-	padding: 6px 6px 4px 6px;
-	margin-top: -47px;
-	margin-right: 14px;
-	background: #ab1a25;
-	font-size: 16px;
-	cursor: pointer;
-	color: white;
-	border: 0;
+    padding: 6px 6px 4px 6px;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    color: #343434;
+    border: 0;
+    margin: 13px 0px 0px 30px;
+}
+
+
+#searchBox2 {
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+    color: white;
+    opacity: 0;
+}
+
+#navbar .nav li form .showsearch {
+	opacity: 1;
+	transition: all 0.2s linear;
 }
 
 /* SLIDER */
@@ -2008,6 +2055,10 @@ x:-o-prefocus, .lb-overlay img {
     height: 100%;
 }
 
+
+#navbar .nav li form {
+
+}
 
 
 /* POSLEDNO ZA GIT > OD DOMA > 23:10 > Nedela 04-03-18 */
