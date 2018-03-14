@@ -24,33 +24,29 @@
 
 .navbar-wrapper {
 	margin: 0 auto;
-	width: 500px;
+	width: 600px;
 }
 
 .nav {
-	font: left;
 	margin: 0;
-    padding: 0;
+    padding-top: 20px;
     text-align: center;
-    height: 60px;
-}
-
-.nav {
-	display: inline-block;
+    height: 58px;
+    display: inline-block;
 }
 
 .nav li {
     display: inline;
-    height: 60px;
     width: 60px;
-    line-height: 60px;
+    line-height: 2;
     font-size: 16px;
+    margin-left: 18px;
 }
 
 .nav a, .foot-nav {
 	font-weight: 300;
     display: inline-block;
-    padding: 0 21px;	
+    padding: 0 30px;	
     color: #666;
 }
 
@@ -67,9 +63,9 @@
 	background: url("../images/logo-w.svg") center;
 	float: left;
 	background-size: 100%;
-	position: relative;
-	margin-right: 20px;
-	margin-top: 8px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 46%;
 }
 
 .logo-color {
@@ -137,7 +133,7 @@
 	height: auto;
 	position: absolute;
 	top: 390px;
-	left: 840px;
+	left: 890px;
 	opacity: 0;
 	filter: grayscale(100%);
 	transition: all 1s ease-in-out;
@@ -154,7 +150,7 @@
 .main:hover .main-name h1 {
 	font-size: 62px;
 	letter-spacing: 2px;
-	color: rgba(42,32,59,0.8);
+	color: white;
 	font-weight: 400;
 	text-align: right;
 }
@@ -417,13 +413,13 @@
 }
 
 .contact-right-form button {
-    background-color: #ddd;
+	float: left;
+	background-color: #ddd;
     border: 1px solid ##474747;
     color: #474747;
-    padding: 15px 32px;
+    padding: 15px 34px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+/*    text-decoration: none;*/
     font-size: 16px;
 }
 
