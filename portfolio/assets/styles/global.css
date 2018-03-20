@@ -86,17 +86,16 @@
 /* MAIN */
 
 .main {
-	float: left;
 	width: 100%;
 	height: 800px;
-	border: 1px transparent;
-	display: block;
+	/*	border: 1px transparent;*/
+/*	display: block;*/
 }
 
 .main-name {
 	position: absolute;
 	z-index: 100;
-	top: 380px;
+	top: 400px;
 	left: 13%;
 }
 
@@ -112,30 +111,26 @@
 	position: fixed;
 }
 
-.main-pic {
+/*.main-pic {
 	width: 1920px;
 	height: 800px;
 	display: inline-block;
 	background: url("../images/main.jpg") center;
 	filter: grayscale(100%);
 	transition: all 1s ease-in-out;
-}
+}*/
 
 .parallax {
-
-    background-image: url("../images/main.jpg");
+	
+	background: #153c63 url("../images/main.jpg");
     filter: grayscale(100%);
-    width: 100%;
+    width: 1920px;
     height: 800px; 
 	transition: all 1s ease-in-out;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-<<<<<<< HEAD
-    background-size: center;
-=======
-    background-size: contain;
->>>>>>> affdc9e56816c51641369f45215a1edb6bdede02
+    background-size: auto;
 }
 
 .main:hover .parallax, a:hover  {
@@ -157,7 +152,7 @@
 	width: 120px;
 	height: auto;
 	position: fixed;
-	top: 390px;
+	top: 410px;
 	left: 47%;
 	opacity: 0;
 	filter: grayscale(100%);
