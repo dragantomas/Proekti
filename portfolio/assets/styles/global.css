@@ -124,7 +124,7 @@
 	
 	background: #153c63 url("../images/main.jpg");
     filter: grayscale(100%);
-    width: 1920px;
+    width: 100%;
     height: 800px; 
 	transition: all 1s ease-in-out;
     background-attachment: fixed;
