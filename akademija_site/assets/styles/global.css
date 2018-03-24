@@ -29,6 +29,7 @@ img a i {
 .wrapper {
 	width: 1184px;
 	margin: 0 auto;
+	display: block;
 }
 
 .menu-top {

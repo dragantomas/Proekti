@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Exo', sans-serif;
 	list-style: none;
 	text-decoration: none;
 	color: inherit;
@@ -124,7 +124,7 @@
 	
 	background: #153c63 url("../images/main.jpg");
     filter: grayscale(100%);
-    width: 1920px;
+    width: 100%;
     height: 800px; 
 	transition: all 1s ease-in-out;
     background-attachment: fixed;
