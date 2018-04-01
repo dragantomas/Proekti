@@ -142,7 +142,8 @@ img a i {
     font-weight: bold;
     margin-bottom: 10px;
     width: 100%;
-    z-index: 100;
+	z-index: 100;
+	display: block;
 }
 
 .nav-wrap {
@@ -207,6 +208,7 @@ img a i {
 	margin: 0px 10px;
 	font-size: 16px;
 }
+
 
 .dropdown-button {
 	color:#444;
@@ -379,6 +381,51 @@ img a i {
 	background: none;
 	color: #ddd;
 	font-size: 16px;
+}
+
+/* BURGER MENU */
+
+.burger-menu {
+	display: none;
+}
+
+.burger-menu {
+	width: 50px;
+	border: 0;
+	background: none;
+	font-size: 30px;
+	margin:0 auto;
+	line-height: 60px;
+	margin-left: 70px;
+	padding: 0 10px;
+}
+
+.burger-menu a {
+	color: #222;
+}
+
+.burger-menu-drop {
+	width: 100%;
+	background: #ab1a25;
+	display: none;
+	position: absolute;
+	z-index: 10000000;
+	margin-left: -110px;
+}
+
+.burger-menu-click {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	background: #ab1a25;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+	opacity: 1;
+	transform: scaleY(1);
+	transform-origin: top;
+	visibility: visible;
+	transition: all .3s ease 0s;
+	z-index: 100000;
 }
 
 /* SLIDER */
