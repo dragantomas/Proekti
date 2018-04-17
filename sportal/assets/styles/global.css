@@ -476,12 +476,36 @@ img, a, i {
 /* SPORTS SECTION */
 
 .sports-section {
-    margin: 64px 0;
+    margin: 64px 0 0 0;
     padding: 64px 0;
     width: 100%;
     background: #dcebf1;
     float: left;
+    position: relative;
+}
 
+.sports-section-arrow-left, .sports-section-arrow-right {
+    font-size: 72px;
+}
+
+.sports-section-arrow-left i, .sports-section-arrow-right i {
+    color: #0085ca;
+}
+
+.sports-section-arrow-left {
+    position: absolute;
+    left: 200px;
+    top: 48%;
+}
+
+.sports-section-arrow-right {
+    position: absolute;
+    right: 200px;
+    top: 48%;
+}
+
+.sports-section a {
+    color: #000;
 }
 
 .sports {
@@ -503,7 +527,6 @@ img, a, i {
     position: absolute;
     top: 5px;
     left: 50px;
-
 }
 
 .football h4 {
@@ -536,9 +559,10 @@ img, a, i {
 
 .sports-section-article h5 {
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
     float: right;
     position: absolute;
+    font-weight: 500;
     left: 170px;
     overflow: hidden;
 }
@@ -557,3 +581,90 @@ img, a, i {
     position: absolute;
     bottom: 0;
 } 
+
+.ssa-bar-basketball {
+    width: 430px;
+    height: 3px;
+    background: #ff5200;
+    position: absolute;
+    bottom: 0;
+} 
+
+.ssa-bar-handball {
+    width: 430px;
+    height: 3px;
+    background: #c70039;
+    position: absolute;
+    bottom: 0;
+} 
+
+/* SOCIAL MEDIA */
+
+.social-media {
+    float: left;
+    width: 100%;
+    padding: 64px;
+}
+
+.sm-container {
+    float: left;
+    width: 431px;
+    height: 487px;
+    border: 2px solid #00204a;
+    margin-right: 36px;
+    padding: 5px;
+}
+
+.sm-container:last-child {
+    margin-right: 0; 
+}
+
+/* VIDEO GALERY */
+
+.video-gallery {
+    float: left;
+    width: 100%;
+    background: #153d71;
+}
+
+.video-gallery-background {
+    width: 1920px;
+    height: 740px;
+    display: inline;
+    background: url("../images/video_background.jpg") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    padding: 64px 0;
+    ext-align:center;
+}
+
+.video-left, .video-right {
+    float: left;
+    width: 320px;
+    height: 432px;
+    background: aquamarine;
+    margin-right: 20px;
+}
+
+.video-main {
+    float: left;
+    width: 666px;
+    height: 432px;
+    background: aqua;
+}
+
+.video-right {
+    float: right;
+}
+
+.more-btn {
+    font-size: 20px;
+    color: #fff;
+    background: #0085ca;
+    padding: 6px 18px;
+    border: none;
+    margin: 80px 0 0 0;
+    position: relative;
+    left: 46%;
+}
+
