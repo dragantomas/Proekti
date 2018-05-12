@@ -30,7 +30,13 @@ img, a, i {
     width: 1366px;
     margin: 0 auto;
     display: block;
-    }
+}
+
+.wrap-foto {
+    width: 1720px;
+    margin: 0 auto;
+    display: block;
+}
 
 .row {
     width: 100%;
@@ -452,7 +458,7 @@ img, a, i {
 .sidebar-right-banner img {
     height: 434px;
     width: 300px;
-    margin: 30px 0;
+    margin: 76px 0;
     object-fit: contain;
 }
 
@@ -549,7 +555,7 @@ img, a, i {
 
 .basketball h4 {
     color: #ff5200;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .handball h4 {
@@ -637,28 +643,55 @@ img, a, i {
 
 /* VIDEO GALERY */
 
+.video-gallery h1, .foto-gallery h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-main h2 {
+    font-family: Roboto;
+    font-size: 26px;
+    color: #fff;
+    margin: 8px 0 12px 0;
+    font-weight: 500;
+}
+
+.video h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0 36px 0;
+    font-weight: 500;
+}
+
 .video-gallery {
     float: left;
     width: 100%;
     background: #153d71;
+    margin-bottom: 736px;
+}
+
+.video-gallery a {
+    color: #fff;
 }
 
 .video-gallery-background {
-    width: 1920px;
+    width: 100%;
     height: 740px;
     display: inline;
     background: url("../images/video_background.jpg") no-repeat center;
     background-size: 100%;
     position: absolute;
     padding: 64px 0;
-    ext-align:center;
 }
 
 .video-left, .video-right {
     float: left;
     width: 320px;
     height: 432px;
-    background: aquamarine;
     margin-right: 20px;
 }
 
@@ -666,7 +699,6 @@ img, a, i {
     float: left;
     width: 666px;
     height: 432px;
-    background: aqua;
 }
 
 .video-right {
@@ -684,3 +716,463 @@ img, a, i {
     left: 46%;
 }
 
+/* KOLUMNI */
+
+.columns {
+    float: left;
+    width: 100%;
+    background: #dfdfdf;
+    padding: 80px;
+    position: relative;
+}
+
+.columns a {
+    color: #fff;
+}
+
+.columns h1, .most-commented h1, .expert-tips h1, .tipster-corner h1, .top-tiketi h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.columns h4 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.columns h2 {
+    font-size: 20px;
+    color: #0085ca;
+    margin: 20px 0 10px 0;
+}
+
+.column-right a, .column-left a {
+    color: #0085ca;
+    font-family: roboto condensed;
+    font-size: 20px;
+}
+
+.column-left, .column-right {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 238px;
+    background: #fff;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-left: 220px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.column-left img, .column-right img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.column-right {
+    margin-right: 0;
+}
+
+.columns-arrow-left, .columns-arrow-right {
+    font-size: 72px;
+}
+
+.columns-arrow-left i, .columns-arrow-right i {
+    color: #0085ca;
+    font-size: 72px; 
+}
+
+.columns-arrow-left {
+    position: absolute;
+    left: 300px;
+    top: 41%;
+}
+
+.columns-arrow-right {
+    position: absolute;
+    right: 300px;
+    top: 41%;
+}
+
+/* FOTO GALERIJA */
+
+.foto-gallery {
+    float: left;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin: -4px 0;
+}
+
+.foto-gallery a {
+    color: #fff;   
+}
+
+.foto-gallery img {
+    margin: 30px 10px 0 10px;
+}
+
+.foto-gallery-background {
+    width: 100%;
+    height: 800px;
+    display: inline;
+    background: url("../images/foto_background.jpg") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    padding: 64px 0;
+}
+
+.foto-arrow-left, .foto-arrow-right {
+    font-size: 72px;
+}
+
+.foto-arrow-left i, .foto-arrow-right i {
+    color: #fff;
+    font-size: 72px;
+    opacity: .5; 
+}
+
+.foto-arrow-left {
+    position: absolute;
+    left: 120px;
+    top: 41%;
+}
+
+.foto-arrow-right {
+    position: absolute;
+    right: 120px;
+    top: 41%;
+}
+
+/* MAIL SUBSCRIBE */
+
+.mail-subscribe {
+    float: left;
+    width: 100%;
+    height: 380px;
+    margin-bottom: -20px;
+
+}
+
+.mail-subscribe a {
+    color: #fff;
+}
+
+.mail-subscribe button {
+    background: #00204a;
+    padding: 12px 30px;
+}
+
+.mail-subscribe h2 {
+    font-family: roboto;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.mail-background {
+    width: 100%;
+    height: 360px;
+    display: inline;
+    background: url("../images/mail_background.jpg") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    padding: 64px 0;
+}
+
+.mail-subscribe input {
+    padding: 10px;
+    width: 600px;
+    margin: 60px 0 -20px 380px;
+}
+
+/* MOST COMMENTED */
+
+.most-commented {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 915px;
+    background: #dcebf1;
+    padding: 80px 0;
+}
+
+.most-commented h1 {
+    color: #005792;
+}
+
+.mc-article h2 {
+    font-family: roboto;
+    color: #00204a;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 10px 0 20px;
+}
+
+.mc-article p {
+    margin: 380px 20px 10px 20px;
+}
+
+.mc-article {
+    position: relative;
+    float: left;
+    width: 431px;
+    height: 570px;
+    margin-right: 36px;
+    background: #fff;
+}
+
+.mc-article:last-of-type {
+    margin-right: 0;
+}
+
+.mc-article img {
+    position: absolute;
+    top: 80px;
+    width: 431px;
+    height: 350px;
+}
+
+.mc-comment img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.mc-counter a {
+    color: #fff;
+}
+
+.mc-comment {
+    position: absolute;
+    text-align: center;
+    top: 108px;
+    right: 30px;
+}
+
+.mc-counter {
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    right: 0;
+    top: 8px;
+}
+
+.most-commented a, .expert-tips a {
+    color: #fff;
+}
+
+.most-commented  .more-btn {
+    margin-bottom: 60px;
+}
+
+/* EXPERTS TIPS */
+
+.expert-tips {
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+    position: relative;
+}
+
+.expert-tips h1, .tipster-corner h1 {
+    color: #102944;  
+}
+
+.et-article {
+    position: relative;
+    float: left;
+    width: 660px;
+    height: 292px;
+    margin-right: 40px;
+}
+
+.et-article:last-of-type {
+    margin-right: 0;
+}
+
+.expert-arrow-left, .expert-arrow-right {
+    font-size: 72px;
+}
+
+.expert-arrow-left i, .expert-arrow-right i {
+    color: #0085ca;
+    font-size: 72px; 
+}
+
+.expert-arrow-left {
+    position: absolute;
+    left: 300px;
+    top: 42%;
+}
+
+.expert-arrow-right {
+    position: absolute;
+    right: 300px;
+    top: 42%;
+}
+
+.et-article img {
+    width: 320px;
+    height: 292px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.et-article h2 {
+    font-size: 24px;
+    color: #005792;
+    margin-left: 340px;
+    font-family: roboto;
+}
+
+.et-article p {
+    margin-left: 340px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* TIPSTERSKI AGOL */
+
+.tipster-corner {
+    width: 100%;
+    float: left;
+    padding: 80px 0;
+    position: relative;
+    background: #dadada;
+}
+
+.tipster-corner a {
+    color: #fff;    
+}
+
+.tipster-article {
+    float: left;
+    width: 431px;
+    height: 381px;
+    position: relative;
+    margin-right: 30px;
+    background: #fff;
+}
+
+.tipster-article:last-of-type {
+    margin-right: 0;
+}
+
+.tipster-article img {
+    width: 431px;
+    height: 186px;
+    position: absolute;
+}
+
+.tipster-article h2 {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    color: #005792;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+.tipster-article p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* TOP 5 TIKETI */
+
+.tiketi-background {
+    width: 100%;
+    height: 740px;
+    display: inline;
+    background: url("../images/tiketi_background.jpg") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    padding: 80px 0;
+}
+
+.top-tiketi {
+    float: left;
+    width: 100%;
+}
+
+.top-tiketi h1 {
+    color: #fff;
+}
+
+.top-tiketi a {
+    color: #fff;
+}
+
+.tiket img {
+    width: 252px;
+    height: 392px;
+    margin-right: 22px;
+}
+
+.tiket img:last-of-type {
+    margin-right: 0;
+}
+
+.tiket {
+    float: left;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 740px;
+    float: left;
+    width: 100%;
+    padding: 80px 0 80px 450px;
+    background: #dcebf1;    
+}
+
+.footer-column {
+    float: left;
+    width: 260px;
+    margin: 0 50px;
+}
+
+.footer-column li {
+    list-style-type: disc;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00204a;
+}
+
+.footer a {
+    color: #00204a;
+}
+
+.footer i {
+    margin-right: 10px;
+    font-size: 26px;
+    color: #00204a;
+}
+
+.footer-column:first-of-type li {
+    list-style: none;
+}
+
+.footer-sm i {
+    font-size: 40px;
+    margin-right: 20px;
+}
