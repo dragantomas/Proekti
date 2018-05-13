@@ -15,6 +15,10 @@ a {
     padding: 0;
 }
 
+a:link {
+   color: inherit;
+}
+
 ul, li {
 	list-style: none;
 }
@@ -22,6 +26,10 @@ ul, li {
 img, a, i {
 	margin: 0;
 	padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* TOP MENU */
@@ -68,13 +76,12 @@ img, a, i {
     top: 0;
     width: 100%;
     z-index: 100;
-  }
+}
 
 .menu-main {
     height: 80px;
     background: #0085ca;
     border-bottom: 2px solid #00204a;
-
 }
 
 .menu-main a {
@@ -85,7 +92,6 @@ img, a, i {
 .menu-main-nav {
     float: right;
     line-height: 80px;
-
 }
 
 .logo-menu-main {
@@ -222,7 +228,7 @@ img, a, i {
 .sidebar-left-newest h3, .sidebar-left-most-viewed h3, .sidebar-right h3 {
     color: #0085ca;
     text-transform: uppercase;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .sb-news {
@@ -458,7 +464,7 @@ img, a, i {
 .sidebar-right-banner img {
     height: 434px;
     width: 300px;
-    margin: 76px 0;
+    margin: 30px 0;
     object-fit: contain;
 }
 
@@ -533,7 +539,6 @@ img, a, i {
 .sports {
     width: 460px;
     float: left;
-    /* margin-right: 38px; */
     position: relative;
 }
 
@@ -553,7 +558,7 @@ img, a, i {
 
 .football h4 {
     color: #098c6f;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .basketball h4 {
@@ -563,22 +568,22 @@ img, a, i {
 
 .handball h4 {
     color: #c70039;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .tennis h4 {
     color: #71a404;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .hockey h4 {
     color: #4ab3f4;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .mix h4 {
     color: #77736f;
-     font-family: roboto;
+    font-family: roboto;
 }
 
 .football img {
@@ -834,13 +839,13 @@ img, a, i {
 
 .columns-arrow-left {
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 41%;
 }
 
 .columns-arrow-right {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 41%;
 }
 
@@ -884,13 +889,13 @@ img, a, i {
 
 .foto-arrow-left {
     position: absolute;
-    left: 120px;
+    left: 60px;
     top: 41%;
 }
 
 .foto-arrow-right {
     position: absolute;
-    right: 120px;
+    right: 60px;
     top: 41%;
 }
 
@@ -901,7 +906,6 @@ img, a, i {
     width: 100%;
     height: 380px;
     margin-bottom: -20px;
-
 }
 
 .mail-subscribe a {
@@ -1057,13 +1061,13 @@ img, a, i {
 
 .expert-arrow-left {
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 42%;
 }
 
 .expert-arrow-right {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 42%;
 }
 
@@ -1145,7 +1149,7 @@ img, a, i {
     height: 740px;
     display: inline;
     background: url("../images/tiketi_background.jpg") no-repeat center;
-    background-size: 100%;
+    background-size: 110%;
     position: absolute;
     padding: 80px 0;
 }
@@ -1153,6 +1157,7 @@ img, a, i {
 .top-tiketi {
     float: left;
     width: 100%;
+    height: 740px;
 }
 
 .top-tiketi h1 {
@@ -1180,7 +1185,6 @@ img, a, i {
 /* FOOTER */
 
 .footer {
-    margin-top: 740px;
     float: left;
     width: 100%;
     padding: 80px 0 40px 450px;
@@ -1229,12 +1233,13 @@ img, a, i {
     background: #dcebf1;
 }
 
-/* SLIDER */
+/* SLIDER SECTIONS*/
 
 .my-slider {
     width: 100%;
     margin-right: 20px;
 }
+
 .tns-nav {
     /* display: none; */
 }
@@ -1246,7 +1251,7 @@ img, a, i {
 .tns-controls button[data-controls="prev"] {
     font-size: 100px;
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 48%;
     background: none;
     border: none;
@@ -1257,7 +1262,7 @@ img, a, i {
 .tns-controls button[data-controls="next"] {
     font-size: 100px;
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 48%;
     background: none;
     border: none;
@@ -1272,4 +1277,286 @@ img, a, i {
 
 .tns-visually-hidden {
     display: none;
+}
+
+/* SECTION PAGE */
+
+.ss-left {
+    float: left;
+    margin-top: 183px;
+    width: 300px;
+}
+
+.ss-link-basketball, .ss-link-handball, .ss-link-hockey, .ss-link-volley, .ss-link-tennis, .ss-link-moto, .ss-link-mix {
+    position: relative;
+    font-size: 30px;
+    height: 54px;
+    margin-bottom: 64px;
+}
+
+.ss-link-basketball a, .ss-link-handball a, .ss-link-hockey a, .ss-link-volley a, .ss-link-tennis a, .ss-link-moto a, .ss-link-mix a {
+    position: absolute;
+    bottom: 12px;
+    left: 70px;
+    color: #666;
+}
+
+.ss-link-handball a {
+    /* color: #c70039; */
+}
+
+.ss-link-hockey a {
+    /* color: #4ab3f4; */
+}
+
+.select {
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.ss-link-basketball i, .ss-link-handball i, .ss-link-hockey i, .ss-link-volley i, .ss-link-tennis i, .ss-link-moto i, .ss-link-mix i {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    font-size: 26px;
+    color: #ff5200;
+}
+
+.ss-link-handball i {
+    color: #c70039; 
+}
+
+.ss-link-hockey i {
+    color: #4ab3f4;
+}
+
+.ss-link-volley i {
+    color: #005792;
+}
+
+.ss-link-tennis i {
+    color: #71a404;
+}
+
+.ss-link-moto i {
+    color: #4b4036;
+}
+
+.ss-link-mix i {
+    color: #77736f;
+}
+
+.ss-link-basketball img, .ss-link-handball img, .ss-link-hockey img, .ss-link-volley img, .ss-link-tennis img, .ss-link-moto img, .ss-link-mix img {
+    width: 54px;
+    height: 54px;
+    margin-right: 8px;
+}
+
+.ss-link-b-bar, .ss-link-ha-bar, .ss-link-ho-bar, .ss-link-v-bar, .ss-link-t-bar, .ss-link-m-bar, .ss-link-mi-bar {
+    position: absolute;
+    width: 278px;
+    height: 3px;
+    background: #ff5200;
+    bottom: 0;
+    right: 0;
+}
+
+.ss-link-ha-bar {
+    background: #c70039;
+}
+
+.ss-link-ho-bar {
+    background: #4ab3f4;
+}
+
+.ss-link-v-bar {
+    background: #005792;
+}
+
+.ss-link-t-bar {
+    background: #71a404;
+}
+
+.ss-link-m-bar {
+    background: #4b4036;
+}
+
+.ss-link-mi-bar {
+    background: #77736f;
+}
+
+/* SECTION PAGE MAIN */
+
+.section-main-content {
+    float: right;
+    width: 1026px;
+}
+
+.section-main-content > .more-btn {
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.section-main-content a {
+    color: inherit;
+}
+
+.section-header {
+    position: relative;
+    margin: 54px 0;
+}
+
+.section-header img {
+    width: 76px;
+    height: 76px;
+    opacity: .3;
+}
+
+.section-header h1 {
+    font-family: roboto;
+    color: #088c6f;
+    font-size: 58px;
+    font-weight: 400;
+    opacity: .3;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section-header-bar {
+    background: #088c6f;
+    width: 96%;
+    height: 3px;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.section-main-article-left, .section-main-article-right {
+    position: relative;
+    width: 100%;
+    height: 434px;
+    margin-bottom: 60px;
+}
+
+.section-main-article-left img {
+    float: left;
+    margin-right: 30px;
+}
+
+.section-main-article-right img {
+    float: right;
+    margin-left: 30px;
+}
+
+.section-main-article-left h2, .section-main-article-right h2 {
+    width: 480px;
+    float: left;
+    font-family: roboto;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.arrow-left {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right:30px solid #fff;
+    display: inline;
+    left: 478px;
+    top: 20px; 
+}
+
+.arrow-right {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left:30px solid #fff;
+    display: inline;
+    left: 518px;
+    top: 20px; 
+}
+
+.sma-bar {
+    position: absolute;
+    width: 96.6%;
+    height: 4px;
+    background: #088c6f;
+    bottom: 0;
+    left: 0;
+}
+
+.sma-bar-right {
+    position: absolute;
+    width: 98.6%;
+    height: 4px;
+    background: #088c6f;
+    bottom: 0;
+    right: 0;
+}
+
+.sma-time {
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    left: 528px;
+}
+
+.sma-time-right {
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    right: 528px;
+}
+
+.sma-time i, .sma-time-right i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.sma-comm {
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+}
+
+.sma-comm-right {
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+}
+
+.sma-comm img, .sma-comm-right img {
+    width: 50px;
+    height: 50px;
+}
+
+.sm-count {
+    position: absolute;
+    right: 8px;
+    bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sm-count-right {
+    position: absolute;
+    left: 8px;
+    bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
 }
