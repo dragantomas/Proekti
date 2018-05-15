@@ -1289,7 +1289,7 @@ p {
 
 .ss-link-basketball, .ss-link-handball, .ss-link-hockey, .ss-link-volley, .ss-link-tennis, .ss-link-moto, .ss-link-mix {
     position: relative;
-    font-size: 30px;
+    font-size: 26px;
     height: 54px;
     margin-bottom: 64px;
 }
@@ -1361,7 +1361,7 @@ p {
 .ss-link-b-bar, .ss-link-ha-bar, .ss-link-ho-bar, .ss-link-v-bar, .ss-link-t-bar, .ss-link-m-bar, .ss-link-mi-bar {
     position: absolute;
     width: 278px;
-    height: 3px;
+    height: 2px;
     background: #ff5200;
     bottom: 0;
     right: 0;
@@ -1459,9 +1459,10 @@ p {
 .section-main-article-left h2, .section-main-article-right h2 {
     width: 480px;
     float: left;
-    font-family: roboto;
+    /* font-family: roboto; */
+    color: #00204a;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 30px 0;
 }
 
@@ -1559,4 +1560,138 @@ p {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+}
+
+/* POST PAGE */
+
+.front-fold-left-post {
+    margin: 130px 40px 80px 0;
+    float: left;
+}
+
+.post {
+    float: left;
+    width: 696px;
+}
+
+.post-header {
+    position: relative;
+    float: left;
+    width: 696px;
+    margin: 40px 0;
+}
+
+.post-header h2 {
+    position: absolute;
+    bottom: 5px;
+    right: -20px;
+    font-size: 40px;
+    font-weight: 200;
+    color: #088c6f;
+    opacity: .5;
+}
+
+.ph-bar {
+    width: 696px;
+    height: 3px;
+    background: #088c6f;
+    display: block;
+    margin-left: 20px;
+    position: absolute;
+    top: 38px;
+    opacity: .2; 
+}
+
+.post h1 {
+    float: left;
+    display: inline;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.post-subhead {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.post-pic {
+    width: 696px;
+    margin-bottom: 40px;
+}
+
+.post-time {
+    float: right;
+}
+
+.ps-bar {
+    width: 100%;
+    height: 1px;
+    background: #0085ca;
+    float: left;
+    margin: 2px 0 60px 0;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;    
+}
+
+.post p:last-of-type {
+    margin-bottom: 80px;
+}
+
+.post-share {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.post-share i {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.post-share p {
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 700;
+    color: #00204a;
+    margin: 6px 12px 0 12px;
+}
+
+.post-share span {
+    float: left;
+    height: 40px;
+}
+
+.ps-fb, .ps-tw, .ps-vi {
+    width: 40px;
+    height: 40px;
+    background: #3b5998;
+}
+
+.ps-tw {
+    background: #00aced;
+}
+
+.ps-vi {
+    background: #59267c;
+}
+
+.ps-vi img {
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+}
+
+.post-share > .ps-bar {
+    width: 100%;
+    height: 1px;
+    background: #0085ca;
+    float: left;
+    margin: 0px 0 60px 0;
 }
