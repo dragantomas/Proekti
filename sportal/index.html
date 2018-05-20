@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" id="db5">Фото</button>
+                    <button class="dropbtn" id="db5"><a href="foto.html">Фото</a></button>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn"id="db6">Видео</button>
@@ -252,10 +252,14 @@
                     <div class="msh-bar"></div>
                 </div>
                 <a href="post.html"><h1>Меси официјално најдобар стрелец во историјата на Барселона</h1></a>
+                <div class="ms-photo">
                 <a href="post.html"><img src="assets/images/foto/foto1.jpg" alt="foto1"></a>
+                </div>
                 <div class="main-sub-left">
                     <a href="#"><h2>Раул останува на клупата на Македонија</h2></a>
+                    <div class="ms-photo-2">
                     <a href="#"><img src="assets/images/thumbs_large/thumbl1.jpg" alt="thumb_large"></a>
+                    </div>
                     <a href="#"><div class="main-sub-sport handball-small">
                         <img src="assets/images/logo/handball_small_white.png" alt="handball-logo">
                     </div></a>
@@ -270,7 +274,9 @@
                 </div>
                 <div class="main-sub-right">
                     <a href="#"><h2>Санчес најплатен фудбалер на Манчестер јунајтед</h2></a>
+                    <div class="ms-photo-2">
                     <a href="#"><img src="assets/images/thumbs_large/thumbl2.jpg" alt="thumb_large"></a>
+                    </div>
                     <a href="#"><div class="main-sub-sport football-small">
                         <img src="assets/images/logo/football_small_white.png" alt="handball-logo">
                     </div></a>
@@ -285,7 +291,9 @@
                 </div>
                 <div class="main-sub-left">
                     <a href="#"><h2>Серхио Рамос ќе паузира еден месец</h2></a>
+                    <div class="ms-photo-2">
                     <a href="#"><img src="assets/images/thumbs_large/thumbl3.jpg" alt="thumb_large"></a>
+                    </div>
                     <a href="#"><div class="main-sub-sport football-small">
                         <img src="assets/images/logo/football_small_white.png" alt="football-logo">
                     </div></a>
@@ -300,7 +308,9 @@
                 </div>
                 <div class="main-sub-right">
                     <a href="#"><h2>За историја – Брадата“ постигна трипл-дабл и 60 поени</h2></a>
+                    <div class="ms-photo-2">
                     <a href="#"><img src="assets/images/thumbs_large/thumbl4.jpg" alt="thumb_large"></a>
+                    </div>
                     <a href="#"><div class="main-sub-sport basketball-small">
                         <img src="assets/images/logo/basketball_small_white.png" alt="basketball-logo">
                     </div></a>
@@ -1017,7 +1027,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam.</p>
             </div>
-            <button class="more-btn"><a href="#">Повеќе</a></button>
+            <button class="more-btn"><a href="#">Погледни ги сите колумни</a></button>
             <div class="columns-arrow-right">
                 <a href="#">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -1032,21 +1042,21 @@
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </a>
             </div>
-            <div class="wrap-foto">
-                <h1>ФОТО ГАЛЕРИЈА</h1>
-                <a href=""><img src="assets/images/foto-gallery/foto1.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto2.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto3.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto4.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto5.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto6.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto7.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto8.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto9.jpg" alt=""></a>
-                <a href=""><img src="assets/images/foto-gallery/foto10.jpg" alt=""></a>
+            <div class="foto">
+                <div class="wrap">
+                <h1> <a href="foto.html">ФОТО ГАЛЕРИЈА</a></h1>
+                <a href="#"><img src="assets/images/foto-gallery/foto1.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto2.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto3.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto4.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto5.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto6.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto7.jpg" alt=""></a>
+                <a href="#"><img src="assets/images/foto-gallery/foto8.jpg" alt=""></a>
+                </div>
             </div>
             <button class="more-btn">
-                <a href="#">Повеќе</a>
+                <a href="foto.html">Повеќе</a>
             </button>
             <div class="foto-arrow-right">
                 <a href="#">
@@ -1276,12 +1286,19 @@
     <script>
         var slider = tns({
             container: '.my-slider',
-            items: 3,
-            slideBy: 1,
+            // items: 3,
+            // slideBy: 1,
             autoplay: true,
             autoplayTimeout: 8000,
             autoplayDirection: "forward",
-            fixedWidth: 460,
+            fixedWidth: 455,
+            autoplayHoverPause: true,
+            mode: 'gallery',
+            animateIn: 'fadeInDown',
+            // animateOut: 'fadeOutDown',
+            animateDelay: 100,
+            speed: 500,
+            // other: options
             // controls: false,
             autoplayText: [
                 "",

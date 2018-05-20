@@ -225,7 +225,7 @@ p {
     width: 300px;
 }
 
-.sidebar-left-newest h3, .sidebar-left-most-viewed h3, .sidebar-right h3 {
+.sidebar-left-newest h3, .front-fold-right-post h3, .povrzani-vesti h3, .sidebar-left-most-viewed h3, .sidebar-right h3 {
     color: #0085ca;
     text-transform: uppercase;
     font-family: roboto;
@@ -241,6 +241,12 @@ p {
     display: inline;
     font-size: 18px;
     font-weight: 500;
+    color: #555;
+    font-weight: 700;
+}
+
+.sb-news h5:hover {
+    color: #00204a;
 }
 
 .sb-news img {
@@ -306,12 +312,38 @@ p {
     margin: 40px 0;
     font-weight: 500;
     font-family: 'Roboto Condensed', sans-serif;
-    letter-spacing: -1px;
+    /* letter-spacing: 1px; */
+    font-weight: 700;
+    color: #555555;
+}
+
+.main-story h1:hover {
+    color: #00204a;
+}
+
+.ms-photo, .ms-photo-2 {
+    overflow: hidden;
+}
+
+.ms-photo-2 {
+    width: 328px;
+    height: 260px;
+    position: absolute;
+    bottom: 0;   
+}
+
+.ms-photo img, .ms-photo-2 img {
+ transition: all .5s ease;
+}
+
+.ms-photo img:hover, .ms-photo-2 img:hover{
+    -webkit-transform: scale(1.05);
 }
 
 .main-story-header {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .main-story-header h2 {
@@ -368,6 +400,7 @@ p {
     height: 328px;
     float: left;
     margin: 28px 18px 0 0;
+    
 }
 
 .main-sub-right {
@@ -377,8 +410,13 @@ p {
 
 .main-sub-left h2, .main-sub-right h2 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     overflow: hidden;
+    color: #555555;
+}
+
+.main-sub-left h2:hover, .main-sub-right h2:hover {
+    color: #00204a;
 }
 
 .main-sub-left img, .main-sub-right img {
@@ -504,7 +542,7 @@ p {
     margin: 64px 0 0 0;
     padding: 64px 0;
     width: 100%;
-    height: 1080px;
+    /* height: 1080px; */
     background: #efefef;
     float: left;
     position: relative;
@@ -522,13 +560,13 @@ p {
 
 .sports-section-arrow-left {
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 48%;
 }
 
 .sports-section-arrow-right {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 48%;
 }
 
@@ -537,13 +575,10 @@ p {
 }
 
 .sports {
-    width: 460px;
-    float: left;
+    margin: 0 25px 0 -25px;
+    width: 400px;
     position: relative;
-}
-
-.sports:last-child {
-    margin-right: 0;
+    padding-left: 50px;
 }
 
 .sports h4 {
@@ -553,7 +588,7 @@ p {
     font-weight: 500;
     position: absolute;
     top: 5px;
-    left: 50px;
+    left: 100px;
 }
 
 .football h4 {
@@ -593,35 +628,43 @@ p {
 
 .sports-section-article {
     position: relative;
-    height: 150px;
-    margin: 20px 0;
+    height: 120px;
+    margin: 40px auto;
+        width: 400px;
+
+
 }
 
 .sports-section-article img {
-    height: 150px;
+    height: 120px;
     display: inline;
 }
 
 .sports-section-article h5 {
     display: inline-block;
-    width: 260px;
-    font-size: 22px;
+    font-size: 20px;
     float: right;
     position: absolute;
     font-weight: 500;
-    left: 170px;
+    left: 140px;
     overflow: hidden;
+    font-weight: 700;
+    color: #555555;
+}
+
+.sports-section-article h5:hover {
+    color: #00204a;
 }
 
 .ssa-time {
     float: right;
     position: absolute;
-    right: 28px;
+    right: 0;
     bottom: 8px;
 }
 
 .ssa-bar-football {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #098c6f;
     position: absolute;
@@ -629,7 +672,7 @@ p {
 } 
 
 .ssa-bar-basketball {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #ff5200;
     position: absolute;
@@ -637,7 +680,7 @@ p {
 } 
 
 .ssa-bar-handball {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #c70039;
     position: absolute;
@@ -645,7 +688,7 @@ p {
 }
 
 .ssa-bar-tennis {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #71a404;
     position: absolute;
@@ -653,7 +696,7 @@ p {
 }
 
 .ssa-bar-hockey {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #4ab3f4;
     position: absolute;
@@ -661,7 +704,7 @@ p {
 }
 
 .ssa-bar-mix {
-    width: 430px;
+    width: 100%;
     height: 3px;
     background: #77736f;
     position: absolute;
@@ -691,12 +734,21 @@ p {
 
 /* VIDEO GALERY */
 
-.video-gallery h1, .foto-gallery h1 {
+.video-gallery h1, .foto-gallery h1, .foto-gallery-page h1 {
     font-family: Roboto;
     font-size: 24px;
     color: #fff;
     text-align: center;
     margin-bottom: 40px;
+}
+
+.foto h1 a {
+    color: #00204a;
+}
+
+.foto-gallery-page h1 {
+    color: #0085ca;
+    font-size: 40px;
 }
 
 .video-main h2 {
@@ -769,9 +821,12 @@ p {
 .columns {
     float: left;
     width: 100%;
-    background: #dfdfdf;
     padding: 80px;
     position: relative;
+}
+
+.columns .more-btn {
+    left: 40%;
 }
 
 .columns a {
@@ -816,6 +871,7 @@ p {
     padding-left: 220px;
     padding-right: 20px;
     overflow: hidden;
+    border-bottom: 2px solid #999;
 }
 
 .column-left img, .column-right img {
@@ -859,19 +915,38 @@ p {
     margin: -4px 0;
 }
 
+.foto-gallery .more-btn {
+    left: 47.5%;
+}
+
 .foto-gallery a {
     color: #fff;   
 }
 
+.foto h1 {
+    color: #00204a;
+}
+
 .foto-gallery img {
-    margin: 30px 10px 0 10px;
+    margin: 30px 15px 0 15px;
+    border: 1px solid #fff;
+    transition: all 0.2s ease;
+}
+
+.foto-gallery img:hover {
+    opacity: .5;
+    transform: scale(1.05);
+}
+
+.foto-gallery img:last-of-type {
+    margin-right: 0;
 }
 
 .foto-gallery-background {
     width: 100%;
     height: 800px;
     display: inline;
-    background: url("../images/foto_background.jpg") no-repeat center;
+    background: url("../images/foto_background-1.jpg") no-repeat center;
     background-size: 100%;
     position: absolute;
     padding: 64px 0;
@@ -884,18 +959,18 @@ p {
 .foto-arrow-left i, .foto-arrow-right i {
     color: #fff;
     font-size: 72px;
-    opacity: .5; 
+    /* opacity: .5;  */
 }
 
 .foto-arrow-left {
     position: absolute;
-    left: 60px;
+    left: 200px;
     top: 41%;
 }
 
 .foto-arrow-right {
     position: absolute;
-    right: 60px;
+    right: 200px;
     top: 41%;
 }
 
@@ -1044,6 +1119,7 @@ p {
     width: 660px;
     height: 292px;
     margin-right: 40px;
+    border-bottom: 2px solid #999;
 }
 
 .et-article:last-of-type {
@@ -1236,8 +1312,8 @@ p {
 /* SLIDER SECTIONS*/
 
 .my-slider {
-    width: 100%;
-    margin-right: 20px;
+    /* width: 100%;
+    margin: 0 auto; */
 }
 
 .tns-nav {
@@ -1307,6 +1383,15 @@ p {
 
 .ss-link-hockey a {
     /* color: #4ab3f4; */
+}
+
+#cub, #cuh, #cuho, #cuv, #cut, #cum, #cumi {
+    display: none;
+}
+
+.ss-link-hide {
+    margin: -20px 0 40px 0;
+    display: none;
 }
 
 .select {
@@ -1569,6 +1654,12 @@ p {
     float: left;
 }
 
+.front-fold-right-post {
+    width: 300px;
+    margin: 130px 0 80px 0;
+    float: right;
+}
+
 .post {
     float: left;
     width: 696px;
@@ -1577,14 +1668,14 @@ p {
 .post-header {
     position: relative;
     float: left;
-    width: 696px;
+    width: 100%;
     margin: 40px 0;
 }
 
 .post-header h2 {
     position: absolute;
     bottom: 5px;
-    right: -20px;
+    right: 0;
     font-size: 40px;
     font-weight: 200;
     color: #088c6f;
@@ -1592,12 +1683,13 @@ p {
 }
 
 .ph-bar {
-    width: 696px;
+    width: 686px;
     height: 3px;
     background: #088c6f;
     display: block;
     margin-left: 20px;
     position: absolute;
+    right: 0;
     top: 38px;
     opacity: .2; 
 }
@@ -1612,13 +1704,13 @@ p {
 .post-subhead {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 40px;
+    font-weight: 600;
+    color: #555;
 }
 
 .post-pic {
     width: 696px;
-    margin-bottom: 40px;
+    margin: 20px 0 40px 0;
 }
 
 .post-time {
@@ -1647,6 +1739,7 @@ p {
     width: 100%;
     line-height: 40px;
     text-align: center;
+    position: relative;
 }
 
 .post-share i {
@@ -1688,6 +1781,32 @@ p {
     margin-top: 4px;
 }
 
+.ps-ko {
+    position: absolute;
+    right: 110px;
+}
+
+.ps-ko p {
+    position: absolute;
+    right: -6px;
+    top: -5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.ps-ko-bt {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #00204a;
+    outline: none;
+    cursor: pointer;
+}
+
 .post-share > .ps-bar {
     width: 100%;
     height: 1px;
@@ -1695,3 +1814,385 @@ p {
     float: left;
     margin: 0px 0 60px 0;
 }
+
+/* POVRZANI VESTI */
+
+.povrzani-vesti {
+    float: left;
+    width: 100%;
+}
+
+.pv-article {
+    width: 100%;
+    height: 94px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.pv-article h5 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #555;
+    font-weight: 700;
+    font-family: 'roboto';
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+.pv-article h5:hover {
+    color: #00204a;
+}
+
+.pv-article .sbn-time {
+    font-size: 14px;
+}
+
+.pv-bar {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #0085ca;
+    bottom: 0;
+}
+
+.povrzani-vesti .more-btn {
+    font-size: 20px;
+    color: #fff;
+    background: #0085ca;
+    padding: 8px 12px;
+    border: none;
+    margin: 80px 0 80px -60px;
+    position: relative;
+    
+    text-align: center;
+    width: 30%;
+}
+
+/* COMMENT BOX */
+
+.comment-box {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+.comment-box textarea {
+    width: 100%;
+    padding: 10px;
+    color: #555;
+}
+
+.comment-box button {
+    float: right;
+    border: none;
+    background: #0085ca;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.comments {
+    float: left;
+    background: #dedede;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.comment-prev {
+    width: 100%;
+    padding: 12px;
+}
+
+.comment-prev p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'open sans';
+}
+
+.comment-prev p:last-of-type {
+    margin: 0;
+}
+
+.comment-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00204a;
+}
+
+.comment-time {
+    font-size: 14px;
+    float: right;
+}
+
+.comment-bar {
+    float: left;
+    width: 100%;
+    height: 1px;
+    background: #0085ca;
+}
+
+.comments button {
+    margin: 20px 270px 40px 0;
+}
+
+/* POST PAGE KVOTI */
+
+/* .front-fold-right-post {
+    position: fixed;
+    top: 120px;
+    right: 260px;
+    z-index: 101;
+} */
+
+.front-fold-right-post h3 {
+    margin-bottom: 38px;
+}
+
+.ffr-header {
+    font-size: 14px;
+    font-weight: 700;
+    background: #00204a;
+    color: #fff;
+    padding: 8px 0 8px 8px;
+}
+
+.front-fold-right-post thead {
+    padding: 4px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.igra {
+    width: 210px;
+}
+
+.kvota {
+    width: 30px;
+    text-align: center;
+}
+
+.klubovi, .ime-igra {
+    float: left;
+    width: 170px;
+    height: 15px;
+    background: #0085ca;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 4px;
+}
+
+.ffr-header table {
+    width: 300px;
+}
+
+.klubovi a {
+    color: #fff;
+}
+
+.koeficient, .koeficient-igra, .koeficient-igra-1 {
+    height: 30px;
+    background: #0085ca;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 6px;
+}
+
+.koeficient-igra {
+    background: #005792;
+}
+
+.koeficient-igra span, .koeficient-igra-1 span {
+    color: #fee0ae;
+    font-size: 12px;
+}
+
+.koeficient a, .koeficient-igra a, .koeficient-igra-1 a {
+    color: #feb947;
+}
+
+.ime-igra, .ime-igra-1 {
+    height: 40px;
+    width: 84px;
+    float: left;
+    background: #005792;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 4px;
+    line-height: 100%;
+}
+
+.ime-igra a, .ime-igra-1 a {
+    color: #fff;
+}
+
+.ime-igra-1 {
+    background: #0085ca;
+}
+
+/* FOTO GALLERY PAGE */
+
+.foto-gallery-page {
+    width: 100%;
+    padding: 80px 0;
+    
+    box-sizing: border-box;
+}
+
+.foto-slider {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    margin-bottom: 80px;
+}
+
+.f-slides {
+    
+    display: none;
+    overflow: hidden;
+}
+
+.fs-foto {
+    float: left;
+    margin: 20px 24px;
+    object-fit: contain;
+}
+
+.fs-foto img {
+    width: 293px;
+    height: 240px;
+    object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+.fs-foto img:hover {
+    transform: scale(1.05);
+    opacity: .6;
+}
+
+.fs-foto:last-of-type {
+    /* margin-right: 0; */
+}
+
+.prev, .next, .prev-lb, .next-lb {
+  cursor: pointer;
+  position: absolute;
+  top: 245px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #0085ca;
+  font-weight: bold;
+  font-size: 68px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: -50px;
+}
+
+.prev-lb {
+
+    top: 35%;
+    left: -60px;
+    color: #fff;
+}
+
+.next {
+   
+  right: -50px;
+  border-radius: 3px 0 0 3px;
+}
+
+.next-lb {
+
+    top: 35%;
+    right: -60px;
+    color: #fff;
+}
+
+.prev-lb:hover, .next-lb:hover {
+    opacity: 0.5;
+}
+
+
+/* FADE EFECT */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* LIGHTBOX */
+
+.f-slides-lb {
+    display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  /* overflow: auto; */
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  width: 1200px;
+  height: 960px;
+  object-fit: contain;
+}
+
+.modal-content img {
+    max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+

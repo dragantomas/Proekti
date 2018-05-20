@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/media.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
+    
+    <link rel="stylesheet" href="assets/styles/tiny-slider.css">
+    
+    <title>Foto Gallery Rabotno</title>
+</head>
+<body>
+    <div class="row menu-top">
+        <div class="wrap">
+            <div>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-rss" aria-hidden="true"></i>
+                </a>
+                <div class="links-right">
+                    <a href="#">РЕГИСТРИРАЈ СЕ</a>
+                    <a href="#">ЛОГИРАЈ СЕ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar" class="row menu-main">
+        <div class="wrap">
+            <a href="#">
+                <div class="logo-menu-main"></div>
+            </a>
+            <div class="menu-main-nav">
+                <div class="dropdown">
+                    <button class="dropbtn-home" id="homebtn">
+                        <a href="index.html"> Насловна</a>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db1">Фудбал</button>
+                    <div class="dropdown-content" id="dc1">
+                        <a href="section.html">Домашен фудбал</a>
+                        <a href="section.html">Меѓународен фудбал</a>
+                        <a href="section.html">Лига на шампиони</a>
+                        <a href="section.html">Лига на Европа</a>
+                        <a href="section.html">Премиер лига</a>
+                        <a href="section.html">Ла лига</a>
+                        <a href="section.html">Бундес лига</a>
+                        <a href="section.html">Серија А</a>
+                        <a href="section.html">Лига 1</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db2">Кошарка</button>
+                    <div class="dropdown-content" id="dc2">
+                        <a href="#">Домашна кошарка</a>
+                        <a href="#">Меѓународна кошарка</a>
+                        <a href="#">НБА</a>
+                        <a href="#">Евролига</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db3">Ракомет</button>
+                    <div class="dropdown-content" id="dc3">
+                        <a href="#">Домашен ракомет</a>
+                        <a href="#">Меѓународен ракомет</a>
+                        <a href="#">ЕХФ Лига на шампиони</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db4">Останати</button>
+                    <div class="dropdown-content" id="dc4">
+                        <a href="#">Тенис</a>
+                        <a href="#">Хокеј</a>
+                        <a href="#">Одбојка</a>
+                        <a href="#">Мотоспортови</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db5">Фото</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db6">Видео</button>
+                    <div class="dropdown-content" id="dc6">
+                        <a href="#">Фудбал</a>
+                        <a href="#">Кошарка</a>
+                        <a href="#">Ракомет</a>
+                        <a href="#">Тенис</a>
+                        <a href="#">Хокеј</a>
+                        <a href="#">Одбојка</a>
+                        <a href="#">Мотоспортови</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db7">
+                        <a href="http://sportlife.com.mk/">Обложувалница</a>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="db8">
+                        <a href="http://sportlife.com.mk/Rezultati">Резултати</a>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dbs">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-content-search" id="dbs1">
+                        <input type="text" placeholder="Пребарај">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row foto-gallery-page">
+            <div class="wrap">
+                <h1>ЗАБАВНАТА СТРАНА НА СПОРТОТ</h1>
+                
+                <div class="foto-slider">
+                    
+                    <div class="f-slides fade">
+
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl1.jpg" alt="" onclick="openModal();currentSlideLb(1)" ></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl2.jpg" alt="" onclick="openModal();currentSlideLb(2)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl3.jpg" alt="" onclick="openModal();currentSlideLb(3)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl4.jpg" alt="" onclick="openModal();currentSlideLb(4)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl5.jpg" alt="" onclick="openModal();currentSlideLb(5)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl6.jpg" alt="" onclick="openModal();currentSlideLb(6)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl7.jpg" alt="" onclick="openModal();currentSlideLb(7)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl8.jpg" alt=" "onclick="openModal();currentSlideLb(8)"></div>
+
+                    </div>
+
+                    <div class="f-slides fade">
+
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl9.jpg" alt="" onclick="openModal();currentSlideLb(9)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl10.jpg" alt="" onclick="openModal();currentSlideLb(10)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl11.jpg" alt="" onclick="openModal();currentSlideLb(11)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl12.jpg" alt="" onclick="openModal();currentSlideLb(12)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl13.jpg" alt="" onclick="openModal();currentSlideLb(13)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl14.jpg" alt="" onclick="openModal();currentSlideLb(14)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl15.jpg" alt="" onclick="openModal();currentSlideLb(15)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl16.jpg" alt="" onclick="openModal();currentSlideLb(16)"></div>
+
+                    </div>
+
+                    <div class="f-slides fade">
+
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl17.jpg" alt="" onclick="openModal();currentSlideLb(17)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl7.jpg" alt="" onclick="openModal();currentSlideLb(18)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl6.jpg" alt="" onclick="openModal();currentSlideLb(19)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl5.jpg" alt="" onclick="openModal();currentSlideLb(20)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl4.jpg" alt="" onclick="openModal();currentSlideLb(21)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl3.jpg" alt="" onclick="openModal();currentSlideLb(22)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl2.jpg" alt="" onclick="openModal();currentSlideLb(23)"></div>
+                        <div class="fs-foto"><img src="assets/images/foto-gallery/large/fl1.jpg" alt="" onclick="openModal();currentSlideLb(24)"></div>
+
+                    </div>
+
+
+
+                    <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl1.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl2.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl3.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl4.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl5.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl6.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl7.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl8.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl9.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl10.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl11.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl12.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl13.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl14.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl15.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl16.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl17.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl7.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl6.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl5.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl4.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl3.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl2.jpg" alt=""></div>
+                        <div class="f-slides-lb"><img src="assets/images/foto-gallery/large/fl1.jpg" alt=""></div>
+
+                        <a class="prev-lb" onclick="plusSlidesLb(-1)"><i class="fa fa-angle-left" aria-hidden="true"></a>
+                        <a class="next-lb" onclick="plusSlidesLb(1)"><i class="fa fa-angle-right" aria-hidden="true"></a>
+
+                    </div>
+
+                </div>
+        </div>
+
+
+
+    <div class="row footer">
+        <div class="wrap">
+            <div class="footer-column">
+                <ul>
+                    <li>
+                        <a href="#">ИМПРЕСУМ</a>
+                    </li>
+                    <li>Контакт:</li>
+                    <li>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <a href="#">info@sportlife.com.mk</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>389 78 464 003</li>
+                </ul>
+                <ul>
+                    <li>Следи нè:</li>
+                    <li class="footer-sm">
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-rss" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>
+                        <a href="#">ФУДБАЛ</a>
+                    </li>
+                    <li>
+                        <a href="#">КОШАРКА</a>
+                    </li>
+                    <li>
+                        <a href="#">РАКОМЕТ</a>
+                    </li>
+                    <li>
+                        <a href="#">ОСТАНАТИ СПОРТОВИ</a>
+                    </li>
+                    <li>
+                        <a href="#">ВИДЕО ГАЛЕРИЈА</a>
+                    </li>
+                    <li>
+                        <a href="#">ФОТО ГАЛЕРИЈА</a>
+                    </li>
+                    <li>
+                        <a href="#">ОБЛОЖУВАЛНИЦА</a>
+                    </li>
+                    <li>
+                        <a href="#">РЕЗУЛТАТИ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>
+                        <a href="#">КОЛУМНИ</li>
+                    </a>
+                    <li>
+                        <a href="#">НАЈКОМЕНТИРАНИ ВЕСТИ</li>
+                    </a>
+                    <li>
+                        <a href="#">ЕКСПЕРТИТЕ СОВЕТУВААТ</li>
+                    </a>
+                    <li>
+                        <a href="#">ТИПСТЕРСКИ АГОЛ</li>
+                    </a>
+                    <li>
+                        <a href="#">ТОП ПЕТ ТИКЕТИ</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-p">
+        <p>Sport Life Обложувалница 2018 година. Сите права се заштитени.</p>
+    </div>
+    <!-- <script type="text/javascript" src="assets/scripts/global.js"></script> -->
+    <script type="text/javascript" src="assets/scripts/foto.js"></script>
+    
+</body>
+</html>

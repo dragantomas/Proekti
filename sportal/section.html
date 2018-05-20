@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" id="db5">Фото</button>
+                    <button class="dropbtn" id="db5"><a href="foto.html">Фото</a></button>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn" id="db6">Видео</button>
@@ -134,57 +134,658 @@
                 <div class="ss-link-basketball">
                     <img src="assets/images/logo/basketball_small_color.png" alt="">
                     <a href="section.html">КОШАРКА</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button type="button" class="select" onclick="showBasket()"><i class="fa fa-chevron-down" aria-hidden="true" id="cdb"></i><i class="fa fa-chevron-up" aria-hidden="true" id="cub"></i></button>
                     <div class="ss-link-b-bar"></div>
                 </div>
+
+                <div class="ss-link-hide" id="ss-link-basket" style="display: none;">
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Алегри: Скудетото уште не е освоено</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                        </a>
+                        <div class="sport-small handball-small">
+                            <img src="assets/images/logo/handball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                        </a>
+                        <div class="sport-small basketball-small">
+                            <img src="assets/images/logo/basketball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Патрис Евра се враќа во Англија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Официјално: Куман селектор на Холандија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                </div>
+
+
                 <div class="ss-link-handball">
                     <img src="assets/images/logo/handball_small_color.png" alt="">
                     <a href="section.html">РАКОМЕТ</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showHandball()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdh"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cuh"></i>
                     </button>
                     <div class="ss-link-ha-bar"></div>
                 </div>
+                        <div class="ss-link-hide" id="ss-link-handball" style="display: none;">
+                            <div class="sb-news">
+                                <a href="#">
+                                    <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                                </a>
+                                <div class="sport-small football-small">
+                                    <img src="assets/images/logo/football_small_white.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <h5>Шампионската титула уште не е освоена</h5>
+                                </a>
+                                <div class="sbn-time">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    12:30 | 03.02. 2018
+                                </div>
+                                <div class="sbn-bar"></div>
+                            </div>
+                            <div class="sb-news">
+                                <a href="#">
+                                    <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                                </a>
+                                <div class="sport-small football-small">
+                                    <img src="assets/images/logo/football_small_white.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                                </a>
+                                <div class="sbn-time">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    12:30 | 03.02. 2018
+                                </div>
+                                <div class="sbn-bar"></div>
+                            </div>
+                            <div class="sb-news">
+                                <a href="#">
+                                    <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                                </a>
+                                <div class="sport-small handball-small">
+                                    <img src="assets/images/logo/handball_small_white.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                                </a>
+                                <div class="sbn-time">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    12:30 | 03.02. 2018
+                                </div>
+                                <div class="sbn-bar"></div>
+                            </div>
+                            <div class="sb-news">
+                                <a href="#">
+                                    <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                                </a>
+                                <div class="sport-small basketball-small">
+                                    <img src="assets/images/logo/basketball_small_white.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <h5>Патрис Евра се враќа во Англија</h5>
+                                </a>
+                                <div class="sbn-time">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    12:30 | 03.02. 2018
+                                </div>
+                                <div class="sbn-bar"></div>
+                            </div>
+                            <div class="sb-news">
+                                <a href="#">
+                                    <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                                </a>
+                                <div class="sport-small football-small">
+                                    <img src="assets/images/logo/football_small_white.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <h5>Официјално: Куман селектор на Холандија</h5>
+                                </a>
+                                <div class="sbn-time">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    12:30 | 03.02. 2018
+                                </div>
+                                <div class="sbn-bar"></div>
+                            </div>
+                        </div>
+
+
                 <div class="ss-link-hockey">
                     <img src="assets/images/logo/hockey_color.png" alt="">
                     <a href="section.html">ХОКЕЈ</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showHockey()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdho"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cuho"></i>
                     </button>
+                    
                     <div class="ss-link-ho-bar"></div>
                 </div>
+
+                <div class="ss-link-hide" id="ss-link-hockey" style="display: none;">
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Скудетото уште не е освоено</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                        </a>
+                        <div class="sport-small handball-small">
+                            <img src="assets/images/logo/handball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                        </a>
+                        <div class="sport-small basketball-small">
+                            <img src="assets/images/logo/basketball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Патрис Евра се враќа во Англија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Официјално: Куман селектор на Холандија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                </div>
+
+
+
+
+
+
                 <div class="ss-link-volley">
                     <img src="assets/images/logo/volleyball_color.png" alt="">
                     <a href="section.html">ОДБОЈКА</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showVolley()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdv"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cuv"></i>
                     </button>
                     <div class="ss-link-v-bar"></div>
                 </div>
+
+                <div class="ss-link-hide" id="ss-link-volley">
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Скудетото уште не е освоено</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                        </a>
+                        <div class="sport-small handball-small">
+                            <img src="assets/images/logo/handball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                        </a>
+                        <div class="sport-small basketball-small">
+                            <img src="assets/images/logo/basketball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Патрис Евра се враќа во Англија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Официјално: Куман селектор на Холандија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                </div>
+
                 <div class="ss-link-tennis">
                     <img src="assets/images/logo/tennis_color.png" alt="">
                     <a href="section.html">ТЕНИС</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showTennis()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdt"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cut"></i>
                     </button>
                     <div class="ss-link-t-bar"></div>
                 </div>
+
+                <div class="ss-link-hide" id="ss-link-tennis" style="display: none;">
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Скудетото уште не е освоено</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                        </a>
+                        <div class="sport-small handball-small">
+                            <img src="assets/images/logo/handball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                        </a>
+                        <div class="sport-small basketball-small">
+                            <img src="assets/images/logo/basketball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Патрис Евра се враќа во Англија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Официјално: Куман селектор на Холандија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                </div>
+
                 <div class="ss-link-moto">
                     <img src="assets/images/logo/moto_color.png" alt="">
                     <a href="section.html">МОТО СПОРТ</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showMoto()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdm"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cum"></i>
                     </button>
                     <div class="ss-link-m-bar"></div>
                 </div>
+
+                    <div class="ss-link-hide" id="ss-link-moto" style="display: none;">
+                        <div class="sb-news">
+                            <a href="#">
+                                <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                            </a>
+                            <div class="sport-small football-small">
+                                <img src="assets/images/logo/football_small_white.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h5>Скудетото уште не е освоено</h5>
+                            </a>
+                            <div class="sbn-time">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                12:30 | 03.02. 2018
+                            </div>
+                            <div class="sbn-bar"></div>
+                        </div>
+                        <div class="sb-news">
+                            <a href="#">
+                                <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                            </a>
+                            <div class="sport-small football-small">
+                                <img src="assets/images/logo/football_small_white.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                            </a>
+                            <div class="sbn-time">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                12:30 | 03.02. 2018
+                            </div>
+                            <div class="sbn-bar"></div>
+                        </div>
+                        <div class="sb-news">
+                            <a href="#">
+                                <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                            </a>
+                            <div class="sport-small handball-small">
+                                <img src="assets/images/logo/handball_small_white.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                            </a>
+                            <div class="sbn-time">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                12:30 | 03.02. 2018
+                            </div>
+                            <div class="sbn-bar"></div>
+                        </div>
+                        <div class="sb-news">
+                            <a href="#">
+                                <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                            </a>
+                            <div class="sport-small basketball-small">
+                                <img src="assets/images/logo/basketball_small_white.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h5>Патрис Евра се враќа во Англија</h5>
+                            </a>
+                            <div class="sbn-time">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                12:30 | 03.02. 2018
+                            </div>
+                            <div class="sbn-bar"></div>
+                        </div>
+                        <div class="sb-news">
+                            <a href="#">
+                                <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                            </a>
+                            <div class="sport-small football-small">
+                                <img src="assets/images/logo/football_small_white.png" alt="">
+                            </div>
+                            <a href="#">
+                                <h5>Официјално: Куман селектор на Холандија</h5>
+                            </a>
+                            <div class="sbn-time">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                12:30 | 03.02. 2018
+                            </div>
+                            <div class="sbn-bar"></div>
+                        </div>
+                    </div>
+
                 <div class="ss-link-mix">
                     <img src="assets/images/logo/mix_color.png" alt="">
                     <a href="section.html">МИКС</a>
-                    <button type="button" class="select" onclick="alert('Action will be implemented soon!')">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <button type="button" class="select" onclick="showMix()">
+                        <i class="fa fa-chevron-down" aria-hidden="true" id="cdmi"></i>
+                        <i class="fa fa-chevron-up" aria-hidden="true" id="cumi"></i>
                     </button>
                     <div class="ss-link-mi-bar"></div>
                 </div>
+
+                <div class="ss-link-hide" id="ss-link-mix" style="display: none;">
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb1.jpg" alt="thumb1">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Скудетото уште не е освоено</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb2.jpg" alt="thumb2">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Куртуа: Сакам во Реал, плачев кога го напуштив Мадрид</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb3.jpg" alt="thumb3">
+                        </a>
+                        <div class="sport-small handball-small">
+                            <img src="assets/images/logo/handball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Хет-трик на Ди Марија, Марсеј со девет гола... </h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb4.jpg" alt="thumb4">
+                        </a>
+                        <div class="sport-small basketball-small">
+                            <img src="assets/images/logo/basketball_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Патрис Евра се враќа во Англија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                    <div class="sb-news">
+                        <a href="#">
+                            <img src="assets/images/thumbs/thumb5.jpg" alt="thumb5">
+                        </a>
+                        <div class="sport-small football-small">
+                            <img src="assets/images/logo/football_small_white.png" alt="">
+                        </div>
+                        <a href="#">
+                            <h5>Официјално: Куман селектор на Холандија</h5>
+                        </a>
+                        <div class="sbn-time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            12:30 | 03.02. 2018
+                        </div>
+                        <div class="sbn-bar"></div>
+                    </div>
+                </div>
+
             </div>
             
             
@@ -380,7 +981,7 @@
                         <a href="#">ВИДЕО ГАЛЕРИЈА</a>
                     </li>
                     <li>
-                        <a href="#">ФОТО ГАЛЕРИЈА</a>
+                        <a href="foto.html">ФОТО ГАЛЕРИЈА</a>
                     </li>
                     <li>
                         <a href="#">ОБЛОЖУВАЛНИЦА</a>

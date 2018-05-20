@@ -16,6 +16,8 @@ function myFunction() {
   }
 }
 
+
+
 // REMOVE NASLOVNA STIL
 
 document.getElementById("db1").addEventListener("mouseover", removeHomeHover);
@@ -62,3 +64,121 @@ function addHomeHover(){
   document.getElementById("homebtn").style.borderBottom = "2px solid #0085ca";
 };
 
+
+
+function showComments() {
+    var x = document.getElementById("comments");
+    var y = document.getElementById("povrzani-vesti");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "block";
+  }
+}
+
+function showBasket() {
+  var x = document.getElementById("ss-link-basket");
+  var y = document.getElementById("cub");
+  var z = document.getElementById("cdb");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+  }
+}
+
+function showHandball() {
+  var x = document.getElementById("ss-link-handball");
+  var y = document.getElementById("cuh");
+  var z = document.getElementById("cdh");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+
+function showHockey() {
+  var x = document.getElementById("ss-link-hockey");
+  var y = document.getElementById("cuho");
+  var z = document.getElementById("cdho");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+
+function showVolley() {
+  var x = document.getElementById("ss-link-volley");
+  var y = document.getElementById("cuv");
+  var z = document.getElementById("cdv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+
+function showTennis() {
+  var x = document.getElementById("ss-link-tennis");
+  var y = document.getElementById("cut");
+  var z = document.getElementById("cdt");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+
+function showMoto() {
+  var x = document.getElementById("ss-link-moto");
+  var y = document.getElementById("cum");
+  var z = document.getElementById("cdm");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
+
+function showMix() {
+  var x = document.getElementById("ss-link-mix");
+  var y = document.getElementById("cumi");
+  var z = document.getElementById("cdmi");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "block";
+    z.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+}
