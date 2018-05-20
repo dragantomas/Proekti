@@ -182,3 +182,70 @@ function showMix() {
     z.style.display = "block";
   }
 }
+
+// KOLUMNI SLIDER
+
+var slideIndexCol = 1;
+showSlidesCol(slideIndexCol);
+
+function plusSlidesCol(n) {
+  showSlidesCol(slideIndexCol += n);
+}
+
+function showSlidesCol(n) {
+  var i;
+  var slidesCol = document.getElementsByClassName("column-slide");
+
+  if (n > slidesCol.length) { slideIndexCol = 1 }
+  if (n < 1) { slideIndexCol = slidesCol.length }
+  for (i = 0; i < slidesCol.length; i++) {
+    slidesCol[i].style.display = "none";
+  }
+
+  slidesCol[slideIndexCol - 1].style.display = "block";
+  }
+
+
+// NAJKOMENTIRANI SLAJDER
+
+var slideIndexKom = 1;
+showSlidesKom(slideIndexKom);
+
+function plusSlidesKom(n) {
+  showSlidesKom(slideIndexKom += n);
+}
+
+function showSlidesKom(n) {
+  var i;
+  var slidesKom = document.getElementsByClassName("comment-slide");
+
+  if (n > slidesKom.length) { slideIndexKom = 1 }
+  if (n < 1) { slideIndexKom = slidesKom.length }
+  for (i = 0; i < slidesKom.length; i++) {
+    slidesKom[i].style.display = "none";
+  }
+
+  slidesKom[slideIndexKom - 1].style.display = "block";
+}
+
+// EKSPERTSKI SOVETI SLIDER
+
+var slideIndexEks = 1;
+showSlidesEks(slideIndexEks);
+
+function plusSlidesEks(n) {
+  showSlidesEks(slideIndexEks += n);
+}
+
+function showSlidesEks(n) {
+  var i;
+  var slidesEks = document.getElementsByClassName("experts-slide");
+
+  if (n > slidesEks.length) { slideIndexEks = 1 }
+  if (n < 1) { slideIndexEks = slidesEks.length }
+  for (i = 0; i < slidesEks.length; i++) {
+    slidesEks[i].style.display = "none";
+  }
+
+  slidesEks[slideIndexEks - 1].style.display = "block";
+}

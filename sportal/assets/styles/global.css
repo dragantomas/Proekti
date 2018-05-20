@@ -860,18 +860,22 @@ p {
     font-size: 20px;
 }
 
-.column-left, .column-right {
+.column-left {
     position: relative;
     float: left;
     width: 660px;
     height: 238px;
     background: #fff;
-    margin-right: 40px;
+    margin: 0 45px 0 0;
     padding-top: 20px;
     padding-left: 220px;
     padding-right: 20px;
     overflow: hidden;
     border-bottom: 2px solid #999;
+}
+
+.column-left:last-of-type {
+    margin-right: 0;
 }
 
 .column-left img, .column-right img {
@@ -895,15 +899,39 @@ p {
 
 .columns-arrow-left {
     position: absolute;
-    left: 200px;
+    left: 300px;
     top: 41%;
 }
 
 .columns-arrow-right {
     position: absolute;
-    right: 200px;
+    right: 300px;
     top: 41%;
 }
+
+/* SLIDER ZA KATEGORII */
+
+.column-slide {
+    display: none;
+}
+
+.columns-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.comment-container, .experts-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.comment-slide, .experts-slide {
+    display: none;
+}
+
+
 
 /* FOTO GALERIJA */
 
@@ -964,13 +992,13 @@ p {
 
 .foto-arrow-left {
     position: absolute;
-    left: 200px;
+    left: 300px;
     top: 41%;
 }
 
 .foto-arrow-right {
     position: absolute;
-    right: 200px;
+    right: 300px;
     top: 41%;
 }
 
@@ -1137,13 +1165,13 @@ p {
 
 .expert-arrow-left {
     position: absolute;
-    left: 200px;
+    left: 300px;
     top: 42%;
 }
 
 .expert-arrow-right {
     position: absolute;
-    right: 200px;
+    right: 300px;
     top: 42%;
 }
 
