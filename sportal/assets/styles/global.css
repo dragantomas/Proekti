@@ -560,13 +560,13 @@ p {
 
 .sports-section-arrow-left {
     position: absolute;
-    left: 200px;
+    left: 300px;
     top: 48%;
 }
 
 .sports-section-arrow-right {
     position: absolute;
-    right: 200px;
+    right: 300px;
     top: 48%;
 }
 
@@ -899,13 +899,13 @@ p {
 
 .columns-arrow-left {
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 41%;
 }
 
 .columns-arrow-right {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 41%;
 }
 
@@ -1165,13 +1165,13 @@ p {
 
 .expert-arrow-left {
     position: absolute;
-    left: 300px;
+    left: 200px;
     top: 42%;
 }
 
 .expert-arrow-right {
     position: absolute;
-    right: 300px;
+    right: 200px;
     top: 42%;
 }
 
@@ -1350,6 +1350,10 @@ p {
 
 .tns-visualy-hidden {
     /* display: none; */
+}
+
+.myModal {
+    display: none;
 }
 
 .tns-controls button[data-controls="prev"] {
