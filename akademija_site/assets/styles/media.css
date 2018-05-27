@@ -178,8 +178,11 @@
 }
 
 
-
  @media all and (max-width: 360px) {
+
+	.menu-top .menu-top-contacts, .menu-main, .slideshow-container {
+	float: none;
+}
 	 
 	.wrapper {
 		width: 100%;
@@ -194,4 +197,29 @@
 		min-width: 240px;
 		margin-left: -183px;
 	}
+
+	.welcome img {
+		float: none;
+		height: 150px;
+	}
+
+	.izbor-model img {
+		float: right;
+		height: 150px;
+	}
+
+	.intro-text {
+		font-size: 24px;
+		font-weight: 800;
+	}
+
+	.introduction {
+	float: none;
+	height: 1000px;
+	background-color: #efe7be;
+}
+
+
+
+
 }
