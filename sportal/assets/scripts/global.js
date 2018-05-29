@@ -1,5 +1,7 @@
 window.onload = function() {addHomeHover()};
 
+window.onload = function () { showBasket() };
+
 // STICKY NAVBAR
 
 window.onscroll = function() {myFunction()};
